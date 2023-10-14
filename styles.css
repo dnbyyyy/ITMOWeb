@@ -132,7 +132,7 @@ main {
 
 
 @media screen and (max-width: 768px){
-    footer {
+    .right_section {
         display: none;
     }
 }
