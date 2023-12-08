@@ -4,14 +4,6 @@ h1 {
     color: #686461;
 }
 
-nav a {
-    color: #686461;
-    font-size: 24px;
-    text-decoration: none;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
 button {
     padding: 10px 20px;
     background-color: #BACBDB;
@@ -61,14 +53,29 @@ ul li a {
 footer {
     background-color: #333;
     color: #CEAD6D;
-    text-align: center;
     padding: 10px;
-    position: absolute;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
 }
 
 footer a {
     color: #CEAD6D;
+}
+
+footer p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer button {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 img {
@@ -135,4 +142,35 @@ main {
     .right_section {
         display: none;
     }
+}
+
+.popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    z-index: 9999;
+    display: none;
+}
+
+.navigation a {
+    color: #686461;
+    font-size: 24px;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.navigation a.active {
+    font-weight: bold;
+}
+
+.navigation a.hover {
+    font-style: italic;
+}
+
+.bookListPage {
+    display: block;
 }

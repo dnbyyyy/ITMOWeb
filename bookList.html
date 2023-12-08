@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Список книг, планируемых к прочтению</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="scripts/bookList.js" defer></script>
+    <script src="scripts/pageLoadTime.js"></script>
+    <script src="scripts/navButtonsState.js"></script>
+</head>
+<body>
+<header>
+    <img src="assets/logo.png" alt="Логотип Ready To Read" width="149" height="210">
+    <h1>READY TO READ</h1>
+    <nav class="navigation">
+        <a href="index.html" id="profileLink">Профиль</a> |
+        <a href="blog.html" id="blogLink">Блог</a> |
+        <a href="table.html" id="ratingLink">Рейтинг книг</a> |
+        <a href="bookList.html" id="bookListLink">Книги к прочтению</a>
+    </nav>
+</header>
+<main class="bookListPage">
+    <h1>Список книг, планируемых к прочтению</h1>
+    <div class="form-container">
+        <form id="bookForm">
+            <label for="authorName">Автор:</label>
+            <input type="text" id="authorName" name="authorName" required>
+            <label for="bookTitle">Название книги:</label>
+            <input type="text" id="bookTitle" name="bookTitle" required>
+            <button type="submit">Добавить книгу</button>
+        </form>
+    </div>
+    <div id="bookListContainer"></div>
+</main>
+<footer>
+    <p>Author: Dn Byyyy</p>
+    <p><a href="https://github.com/dnbyyyy">GitHub</a></p>
+</footer>
+</body>
+</html>

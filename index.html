@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <title>Ready To Read</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="scripts/pageLoadTime.js"></script>
+    <script src="scripts/navButtonsState.js"></script>
 </head>
 <body>
 <header>
     <img src="assets/logo.png" alt="Логотип Ready To Read" width="149" height="210">
     <h1>READY TO READ</h1>
-    <nav>
-        <a href="#">Главная</a> |
-        <a href="#">Профиль</a> |
-        <a href="#">Настройки</a>
+    <nav class="navigation">
+        <a href="index.html" id="profileLink">Профиль</a> |
+        <a href="blog.html" id="blogLink">Блог</a> |
+        <a href="table.html" id="ratingLink">Рейтинг книг</a> |
+        <a href="bookList.html" id="bookListLink">Книги к прочтению</a>
     </nav>
 </header>
 <main>
@@ -81,7 +84,6 @@
 <footer>
     <p>Author: Dn Byyyy</p>
     <p><a href="https://github.com/dnbyyyy">GitHub</a></p>
-    <button onclick="window.location.href='table.html'">Рейтинг книг</button>
 </footer>
 </body>
 </html>
